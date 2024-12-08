@@ -29,7 +29,6 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
 
         const url = "http://localhost:3000/products"
 
-        e.preventDefault();
          
         // console.log(name, email, age, bio) // Dados retornados ao dar submit.
         
@@ -48,7 +47,7 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
             email,
             age,
             bio,
-            role
+            role,
         };
 
         console.log(product);
@@ -108,7 +107,7 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
                     </label>
 
                     <div>
-                        <input type="submit" value="Enviar"/> {/* Botão enviar (submit)*/}
+                        <input type="submit" value="Enviar" id="submit-styles"/> {/* Botão enviar (submit)*/}
                     </div>
 
                 </div>

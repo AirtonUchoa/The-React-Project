@@ -47,14 +47,14 @@ const Http = () => {
         <>
             <div className='http-board'>
 
-                <h2>Dados do Servidor:</h2>
+                <h2>Dados do Banco:</h2>
 
                 {/* Resgate de dados do Servidor: */}
                 
                 {products.map((product)=> (
 
                     <li key={product.id}>
-                        {product.name}, {product.email}, {product.age}, {product.bio}, {product.bio}
+                        Nome: {product.name}, <br/> E-mail: {product.email}, <br/> Idade: {product.age}, <br/> Bio: {product.bio}, <br/> Função: {product.role} <br/> <br/>
                     </li>
                 ))}
             </div>

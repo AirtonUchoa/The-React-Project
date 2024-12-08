@@ -13,3 +13,7 @@
 #submit-styles{
     width: 100%;
 }
+
+.http-board li{
+    list-style: none;
+}
