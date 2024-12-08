@@ -1,14 +1,19 @@
 header{
-    position: sticky;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    top: 0px;
 
-    background-color: yellow;
+    position: fixed;
+
+    background-color: greenyellow;
     color: black;
 
     width: 100vw;
     padding: 10px;
+}
+
+.header-field{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo-style{

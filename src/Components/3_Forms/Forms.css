@@ -1,19 +1,34 @@
-.form{
+
+
+.form-division-style{
     display: flex;
     flex-direction: column;
     background-color: white;
     justify-content: center;
     align-items: center;
 
-    width: 30vw;
-    height: 60vh;
+    min-width: 30vw;
+    width: auto;
+    height: auto;
 
     border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
     
 }
 
-.Form-Field-Style{
+.form-field-style{
     display: flex;
     flex-direction: column;
-    line-height: 40px;
+}
+
+.form-elements{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+#select-style{
+    display: flex;
+    flex-direction: row;
 }

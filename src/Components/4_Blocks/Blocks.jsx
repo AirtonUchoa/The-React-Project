@@ -1,6 +1,7 @@
 import './Blocks.css'
 
 const BlocksComponent = () => {
+    
     // const block01 = document.querySelector('#block-01');
     // const block02 = document.querySelector('#block-02');
 

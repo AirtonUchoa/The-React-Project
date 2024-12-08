@@ -1,19 +1,30 @@
 import Header from './Components/1_Header/Header'
-import BlocksComponent from './Components/2_Blocks/Blocks'
-import Forms from './Components/3_Forms/Forms'
+import Forms from './Components/2_Forms/Forms'
+// import BlocksComponent from './Components/3_Blocks/Blocks'
+import Http from './Components/4_Http/Http'
 
 import './App.css'
 
 function App() {
+
   return (
     <>
-      <Header/>
-
       <body>
-        <BlocksComponent/>
-        <Forms/>
+          <Header/>
+            
+          <main>
+
+            <Http/>
+            
+            <Forms/>
+
+            {/* <BlocksComponent/> */}
+            
+            
+          </main>
+        
       </body>
-    </>
+    </>   
   );
 };
 
