@@ -1,0 +1,19 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+    width: 30vw;
+    height: 60vh;
+
+    border-radius: 20px;
+    
+}
+
+.Form-Field-Style{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
