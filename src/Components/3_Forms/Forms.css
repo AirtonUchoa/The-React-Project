@@ -28,6 +28,11 @@
     padding-top: 5px;
 }
 
+.form-elements input{
+    height: 30px;
+    border-radius: 5px;
+}
+
 #select-style{
     display: flex;
     flex-direction: row;
@@ -35,4 +40,10 @@
 
 #submit-styles{
     width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .form-field-style{
+       min-width: 60vw; 
+    }
 }

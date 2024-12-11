@@ -27,22 +27,9 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
 
     const handleSubmit = async (e) => {
 
-        const url = "http://localhost:3000/products"
+        const url = "http://localhost:3000/infos"
 
-         
-        // console.log(name, email, age, bio) // Dados retornados ao dar submit.
-        
-        // Limpar dados ao dar submit.
-
-        // setName(""); 
-        // setEmail("");
-        // setAge("");
-        // setBio("");
-
-
-        // Envio de dados:
-
-        const product = {
+        const info = {
             name,
             email,
             age,
@@ -50,14 +37,14 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
             role,
         };
 
-        console.log(product);
+        console.log(info);
 
         const res = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify(product),
+            body: JSON.stringify(info),
         });
 
         
@@ -99,10 +86,10 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
 
                     <label className='form-elements' id='select-style'>
                         <span>Função no sistema: </span>
-                        <select  onChange={(e) => setRole(e.target.value)} value={role || ""}>
-                            <option value='user' name="role">Usuário</option>
-                            <option value='editor' name="role">Editor</option>
-                            <option value='administrator' name="role">Administrador</option>
+                        <select  onChange={(e) => setRole(e.target.value)} value={role || ""} defaultValue="estagiario">
+                            <option value='estagiario' name="role">Estagiário</option>
+                            <option value='funcionario' name="role">Funcionário</option>
+                            <option value='coordenador' name="role">Coordenador</option>
                         </select>
                     </label>
 
