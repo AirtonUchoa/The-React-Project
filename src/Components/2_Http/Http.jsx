@@ -27,10 +27,11 @@ const Http = () => {
 
                 {/* Resgate de dados do Servidor: */}
                 
-                {infos.map((info)=> (
+                {infos.map((info)=> ( 
+                    // tag map é como se fosse um 'for each' mais visual, utilizado justamente para criar listas mais visuais.
 
                     <li key={info.id}>
-                        Nome: {info.name}, <br/> E-mail: {info.email}, <br/> Idade: {info.age}, <br/> Bio: {info.bio}, <br/> Função: {info.role} <br/> <br/>
+                        Nome: {info.name}; <br/> E-mail: {info.email}; <br/> Idade: {info.age}; <br/> Bio: {info.bio}; <br/> Função: {info.role} <br/> <br/>
                     </li>
                 ))}
             </div>

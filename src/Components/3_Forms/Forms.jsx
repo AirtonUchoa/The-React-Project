@@ -10,11 +10,14 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
 
     // Definindo as variáveis 'useState':
 
-    const [name, setName] = useState();
-    const [email, setEmail] = useState();
-    const [age, setAge] = useState();
-    const [bio, setBio] = useState();
-    const [role, setRole] = useState();
+    const [infos, setInfos] = useState([]); 
+    // useState para declarar informações que aparecem no quadro.
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [age, setAge] = useState("");
+    const [bio, setBio] = useState("");
+    const [role, setRole] = useState("estagiário");
 
     const handleName = (e) => {
         setName(e.target.value)
@@ -25,7 +28,7 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
 
     // Função abaixo executa quando aciona-se o evento 'onSubmit' do formulário.
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async () => {
 
         const url = "http://localhost:3000/infos"
 
@@ -47,7 +50,10 @@ const Forms = (defaultName, defaultEmail, defaultAge) => {
             body: JSON.stringify(info),
         });
 
-        
+        // esta parte abaixo serve para tirar aqueles warnings do console.
+        const addedInfos = await res.json();
+
+        setInfos((prevInfos) => [...prevInfos, addedInfos])
     };
 
 

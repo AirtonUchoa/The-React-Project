@@ -1,5 +1,12 @@
 {
   "infos": [
-    
+    {
+      "id": "7055",
+      "name": "Antônio Airton Santos Uchôa",
+      "email": "antonioairton956@gmail.com",
+      "age": "17",
+      "bio": "Um estagiário na G4Flex.",
+      "role": "estagiário"
+    }
   ]
 }
